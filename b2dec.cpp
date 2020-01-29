@@ -5,11 +5,17 @@ using namespace std;
 int main() {
 
 	int n;
-	cin>>n;
-	int p = 1;
-	int ans = 0;
+	
+	int numbers;
+	cin>>numbers;
 
-	while(n>0) {
+	for(int i=0; i<numbers; i++) {
+
+		int ans = 0;
+		int p = 1;
+		
+		cin>>n;
+		while(n>0) {
 		int r = n%10;
 		ans += r*p;
 		p *= 2;
@@ -17,4 +23,5 @@ int main() {
 	}
 	cout<<ans<<endl;
 
+	}
 }
